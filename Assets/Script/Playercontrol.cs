@@ -32,7 +32,7 @@ public class Playercontrol : MonoBehaviour
         if (other.gameObject.CompareTag("Stop"))
         {
             _isMove = false;
-            gameObject.transform.position = new Vector3(2470,1,-1);
+            gameObject.transform.position = new Vector3(2450,1,-1);
         }
     }
 }
