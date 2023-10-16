@@ -19,7 +19,7 @@ public class Answerα : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
