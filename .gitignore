@@ -3,3 +3,8 @@ Logs/
 ProjectSettings/ClusterInputManager.asset
 MyGame3Dc.sln
 Packages/
+Assets/_TerrainAutoUpgrade
+Assets/_TerrainAutoUpgrade.meta
+Assets/
+obj/
+Temp/
