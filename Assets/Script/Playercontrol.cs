@@ -21,9 +21,17 @@ public class Playercontrol : MonoBehaviour
         {
             rbody.AddForce(Vector3.right * speedX, ForceMode.Force);
         }
-        if (_isMove == false) 
+        else if (_isMove == false) 
         {
             speedX = 0;
+        }
+        if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
+        {
+            rbody.AddForce(Vector3.forward * speedZ, ForceMode.Force);
+        }
+        else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
+        {
+            rbody.AddForce(Vector3.back * speedZ, ForceMode.Force);
         }
     }
 

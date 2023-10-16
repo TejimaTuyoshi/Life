@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Playercontrol.cs" />
+    <Compile Include="Assets\Script\Answerα.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
