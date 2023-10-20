@@ -12,6 +12,7 @@ public class Playercontrol : MonoBehaviour
     void Start()
     {
         rbody = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -19,7 +20,7 @@ public class Playercontrol : MonoBehaviour
     {
         if (_isMove == true)
         {
-            rbody.AddForce(Vector3.right * speedX, ForceMode.Force);
+            rbody.AddForce(Vector3.right * speedX, ForceMode.VelocityChange);
         }
         else if (_isMove == false) 
         {
