@@ -9,6 +9,7 @@ public class Playercontrol : MonoBehaviour
     [SerializeField] float speedZ;
     [SerializeField] float speedX = 0.05f;
     public bool _isMove = true;    
+    int _count = 0; 
     void Start()
     {
         rbody = GetComponent<Rigidbody>();
@@ -18,7 +19,7 @@ public class Playercontrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_isMove == true)
+        if (_isMove == true || _count == 3)
         {
             rbody.AddForce(Vector3.right * speedX, ForceMode.VelocityChange);
         }
@@ -34,6 +35,7 @@ public class Playercontrol : MonoBehaviour
         {
             rbody.AddForce(Vector3.back * speedZ, ForceMode.Force);
         }
+        _count++;
     }
 
     private void OnTriggerEnter(Collider other)
