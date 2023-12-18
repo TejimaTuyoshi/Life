@@ -7,9 +7,6 @@ TagManager:
   - Stop
   - panelA
   - Question1
-  - Question2
-  - Question3
-  - Question4
   - Wall
   layers:
   - Default
